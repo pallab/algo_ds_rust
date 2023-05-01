@@ -23,7 +23,7 @@ pub fn merge_two_lists(mut list1: Option<Box<ListNode>>, mut list2: Option<Box<L
 
         loop {
             match (list1, list2) {
-                (Some(mut l1), Some(mut l2) ) => {
+                (Some( l1), Some( l2) ) => {
                     let (mut small, big) = if l1.val > l2.val {
                         (l2, l1)
                     } else {
